@@ -178,7 +178,7 @@ jQuery.fn.fancyZoom = function(options){
   this.each(function(i, obj) {
     var content_div = $(options.modal || $(obj).attr('href')).hide();
     $(obj).addClass('zoomed');
-    $(obj).click(function(e){ show(e, content_div); });
+    $(obj).click(function(e){ return show(e, content_div); });
   });
 
   return this;
