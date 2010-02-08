@@ -1,4 +1,4 @@
-jQuery.fn.fancyHide = function(){ $('.zoom_close').click(); };
+jQuery.fancyHide = function(){ $('.zoom_close').click(); };
 jQuery.fn.fancyZoom = function(options){
   var options     = options || {};
   var directory   = options.directory || 'images';
@@ -136,6 +136,7 @@ jQuery.fn.fancyZoom = function(options){
           });
         } else {
           zoom_content.html(content_div.html());
+          if (options.onShow) options.onShow();
         }
       }
       unfixBackgroundsForIE();
