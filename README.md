@@ -37,6 +37,6 @@ $('a.zoom').fancyZoom();```
 
 ###Demo
 
-You can see the [demo page]()
+You can see the [demo page](http://reflejo.github.com/fancyzoomng/)
 
 by Martín Conte Mac Donell <Reflejo@gmail.com> - [@Reflejo](https://twitter.com/reflejo)
