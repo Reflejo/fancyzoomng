@@ -6,16 +6,16 @@
   <title>fancyzoomNG - atommica</title>
   <meta name="generator" content="magicalNotepad" />
   <meta name="author" content="theCodeFairy" />
-  <link rel="stylesheet" href="../rsrc/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fancyzoom.min.js"></script>
+  <script type="text/javascript" src="media/js/jquery.fancyzoom.js"></script>
   <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
-      $('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true, directory: 'img/'});
-      $('#medium_box_link').fancyZoom({width:400, height:300, url: '/fancyzng/modal.html', directory: 'img/'});
+      $('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true, directory: 'media/img/'});
+      $('#medium_box_link').fancyZoom({width:400, height:300, url: 'modal.html', directory: 'media/img/'});
     });
   </script>
   <style type="text/css">
+    body { background: #f0f0f0; font-family: Lucida, 'Trebuchet MS'; font-size: 13px; color: black; text-align: center; }
     div#photos {overflow:auto;}
     div.photo {float:left; margin:0 20px 20px 0;}
     div.photo a img {border:1px solid; padding:1px;}
@@ -25,9 +25,6 @@
 </head>
 <body class="home">
   <div id="container">
-    <div class="logoHome">
-      <img src="../rsrc/images/logo.png" width="250" alt="atommica"/>
-    </div>
     <div>
       <h1>Images example</h1>
       <div class="photo">
@@ -57,9 +54,6 @@
       </div>
       <br />
       <h1>or you can see <a href="#medium_box" class="failed" id="medium_box_link">the AJAX box</a></h1>
-    </div>
-    <div class="footer">
-      <a href="http://blog.atommica.com" rel="external" title="atommica Blog">atommica</a> - <a href="/jobs.html" title="ymra eht nioj">Work with us!</a>
     </div>
   </div>
 </body>

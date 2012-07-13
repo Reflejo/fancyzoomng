@@ -12,7 +12,8 @@ Very usefull/cute modal based on fancyzoom.
 	```javascript
 	$('a.zoom').fancyZoom({
 	  url: '/modal.html'
-	});```
+	});
+	```
 
  * Shows background when modal comes up. (Styleable)
  * Indicator loading in ajax pages. (Styleable)
@@ -22,7 +23,8 @@ Very usefull/cute modal based on fancyzoom.
 #### Minimalist example
 
 ```javascript
-$('a.zoom').fancyZoom();```
+$('a.zoom').fancyZoom();
+```
 
 #### Advanced example
 ```javascript
