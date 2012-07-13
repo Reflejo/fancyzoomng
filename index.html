@@ -1,1 +1,63 @@
-<b>Test</b>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ar" xml:lang="es-ar">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fancyzoomNG - atommica</title>
+  <meta name="generator" content="magicalNotepad" />
+  <meta name="author" content="theCodeFairy" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+  <script type="text/javascript" src="media/js/jquery.fancyzoom.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true, directory: 'img/'});
+      $('#medium_box_link').fancyZoom({width:400, height:300, url: 'modal.html', directory: 'img/'});
+    });
+  </script>
+  <style type="text/css">
+    body { background: #f0f0f0; font-family: Lucida, 'Trebuchet MS'; font-size: 13px; color: black; text-align: center; }
+    div#photos {overflow:auto;}
+    div.photo {float:left; margin:0 20px 20px 0;}
+    div.photo a img {border:1px solid; padding:1px;}
+    p #beer_caption {margin:5px 0 0;}
+    br { clear: both; }
+  </style>
+</head>
+<body class="home">
+  <div id="container">
+    <div class="logoHome">
+      <img src="media/img/logo.png" width="250" alt="atommica"/>
+    </div>
+    <div>
+      <h1>Images example</h1>
+      <div class="photo">
+        <a href="#brownie">
+          <img src="http://farm4.static.flickr.com/3196/3116520975_74af4111e5_s.jpg" alt="See? This is how you cook a brownie" />
+        </a>
+      </div>
+      <div class="photo">
+        <a href="#arturo">
+          <img src="http://farm4.static.flickr.com/3293/3117330300_5c4266e120_s.jpg" alt="Arturo 4tw!" />
+        </a>
+      </div>
+      <div class="photo">
+        <a href="#beer">
+          <img src="http://farm4.static.flickr.com/3288/3116551067_1639b6802d_s.jpg" alt="Well. Yeah. You know." />
+        </a>
+      </div>
+      <div id="brownie">
+        <img src="http://farm4.static.flickr.com/3196/3116520975_74af4111e5.jpg" alt="See? This is how you cook a brownie" />
+      </div>
+      <div id="arturo">
+        <img src="http://farm4.static.flickr.com/3293/3117330300_5c4266e120.jpg?v=0" alt="Arturo" />
+      </div>
+      <div id="beer">
+        <img src="http://farm4.static.flickr.com/3288/3116551067_1639b6802d.jpg" alt="Well. Yeah. You know." />
+        <p id="beer_caption">ooooooh yea!</p>
+      </div>
+      <br />
+      <h1>or you can see <a href="#medium_box" class="failed" id="medium_box_link">the AJAX box</a></h1>
+    </div>
+  </div>
+</body>
+</html>
