@@ -41,4 +41,4 @@ $('a.zoom').fancyZoom();
 
 You can see the [demo page](http://reflejo.github.com/fancyzoomng/)
 
-by Martín Conte Mac Donell <Reflejo@gmail.com> - [@Reflejo](https://twitter.com/reflejo)
+by Martín Conte Mac Donell <Reflejo@gmail.com> - [@fz](https://twitter.com/fz)
